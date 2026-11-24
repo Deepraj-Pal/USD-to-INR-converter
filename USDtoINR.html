@@ -1,0 +1,39 @@
+<!doctype html>
+     <html>
+                       <head>
+                       <title>USD toINR</title>
+                       </head>
+     <style>
+               button{
+                      
+              background-color:green;
+                      color:black;
+             border-radius:5px;
+                border:2px solid green;
+                 cursor:pointer;
+              padding: 10px:
+                      }
+              input{
+                     weight:100px;
+                   height:20px;
+                     }
+      </style>
+     <body> 
+                <center>
+                <h2>USD to INR Converter</h2>
+                <input id="usd" placeholder="Dollars">
+                <button onclick="conv()">Convert</button>
+                <p id="out"></p>
+                 </center>
+         <script>
+         function conv(){
+                 let d = document;
+                 let a = Number(d.getElementById("usd").value);
+                let rate = 93;
+                let r = a*rate;
+               d.getElementById("out").textContent= "Rupees = " + r;
+                  }
+         </script>
+
+     </body>
+     </html>
